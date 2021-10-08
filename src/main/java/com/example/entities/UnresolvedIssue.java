@@ -3,10 +3,10 @@ package com.example.entities;
 import javax.persistence.*;
 
 @Entity
-public class UnresolvedIssues {
+public class UnresolvedIssue {
     @Id
     @Column(name="issueId")
-    @GeneratedValue(Strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     int id;
 
     @Column(name="issuename")
@@ -52,7 +52,7 @@ public class UnresolvedIssues {
 
     @Override
     public String toString() {
-        return "UnreesolvedIssues{" +
+        return "UnreesolvedIssue{" +
                 "id=" + id +
                 ", issuename='" + issuename + '\'' +
                 ", hostname='" + hostname + '\'' +

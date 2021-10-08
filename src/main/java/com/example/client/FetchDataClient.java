@@ -1,10 +1,10 @@
-package com.example.client;
+/*package com.example.client;
 
 import com.example.util.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
-public class FetchDataClientTest {
+public class FetchDataClient {
 
 	public static void main(String[] args) {
 		Issues issues = null;
@@ -41,7 +41,7 @@ public class FetchDataClientTest {
 				session.getTransaction().commit();
 				System.out.println(e);
 			}
-		}*/
+		}
 	    
 	  }
-}
+}*/

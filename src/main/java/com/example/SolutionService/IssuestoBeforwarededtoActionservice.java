@@ -12,7 +12,7 @@ public class IssuestoBeforwarededtoActionservice {
     @Controller
     @RequestMapping(value = "Issues_to_be_forwared_to_actionService")
 
-    public void List<UnresolvedIssues> fetchUnresolvedissues(){
+    public void List(<UnresolvedIssues> fetchUnresolvedissues(){
 
         @Autowired
          private FetchDataClientTest fetchdataclienttest;

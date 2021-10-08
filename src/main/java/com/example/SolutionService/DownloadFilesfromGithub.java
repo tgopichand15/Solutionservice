@@ -47,12 +47,12 @@ public class DownloadFilesfromGithub {
         /*public static void main(String[] args) throws IOException {
 
             //URL pointing to the file
-            String sUrl = "http://localhost:8080/TestFile/file.zip";
+            String sUrl = "https://github.com/tgopichand15/Hibernatenew/blob/main/.gitignore";
 
             URL url = new URL(sUrl);
 
             //File where to be downloaded
-            File file = new File("C:/Temp/file.zip");
+            File file = new File("/Users/gopi/Shellscripts/");
 
             URLReader.copyURLToFile(url, file);
         }*/
