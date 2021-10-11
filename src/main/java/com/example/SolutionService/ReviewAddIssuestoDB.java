@@ -1,30 +1,33 @@
 package com.example.SolutionService;
 
+import com.example.client.SaveDataClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
 
 //oinserting issues status to DB
-
+@Component
 public class ReviewAddIssuestoDB {
 
     @Autowired
-    private SaveDataClientTest savedataclienttest;
+    private SaveDataClient savedataclienttest;
 
-    boolean AddIssuestoDb(HashMap<String,String> resolvedissues,Hashmap<String,String> unresolvedissues,savedataclienttesrt){
+    boolean AddIssuestoDb(HashMap<String,String> resolvedissues, HashMap<String,String> unresolvedissues) {
 
 
-    try {
+        try {
 
-        savedataclienttest.createIssues(HahMap < String, String > resolvedissues);
-        savedataclinettest.createUnresolvedIssues(HashMap < String, String > unresolvedissies);
+            savedataclienttest.createIssues(List<ResolvedIssue> r) ;
+            savedataclienttest.createUnresolvedIssues(List<UnresolvedIssue> u);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+
 
     }
-    catch(Exception e){
-        e.printstacktrace();
-        return false;
-    }
-
-    return true;
-
-
-
 }

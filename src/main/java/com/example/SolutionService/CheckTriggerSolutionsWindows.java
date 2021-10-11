@@ -1,5 +1,8 @@
 package com.example.SolutionService;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CheckTriggerSolutionsWindows {
 
 
@@ -16,7 +19,7 @@ public class CheckTriggerSolutionsWindows {
             p.waitFor();
         }
         catch(Exception e){
-            e.printStackSpace();
+            e.printStackTrace();
         }
 
     }

@@ -1,8 +1,11 @@
 package com.example.SolutionService;
 import com.jcraft.jsch.*;
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 import java.io.InputStream;
 
+@Component
 public class CheckTriggerSolutionsUnix {
 
         private static final String REMOTE_HOST = "1.1.1.1";
@@ -12,7 +15,7 @@ public class CheckTriggerSolutionsUnix {
         private static final int SESSION_TIMEOUT = 10000;
         private static final int CHANNEL_TIMEOUT = 5000;
 
-        public void executeShellScript(string hostname){
+        public void executeShellScript(String hostname){
 
             String remoteShellScript = "/root/hello.sh";
 

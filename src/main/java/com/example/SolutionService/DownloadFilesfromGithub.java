@@ -9,7 +9,9 @@ import java.net.URL;
 
 public class DownloadFilesfromGithub {
 
-        public static void copyURLToFile(URL url, File file) {
+
+
+        public  void copyURLToFile(URL url, File file) {
 
             try {
                 InputStream input = url.openStream();
